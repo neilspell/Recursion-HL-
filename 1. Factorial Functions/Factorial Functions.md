@@ -1,6 +1,7 @@
 # Factorial Functions 📚
 
 We are going to explore Factorial Functions and compare two different approaches to solving these:
+
 1. Recursion
 2. Iteration
 
@@ -10,7 +11,7 @@ What does factorial `!` mean?
 
 Example:
 ````
-5! = 5 x 4 x 3 x 2 x 1
+5! = 5 x 4 x 3 x 2 x 1 = 120
 ````
 
 In Python, we can use two different methods to solve this type of problem.
