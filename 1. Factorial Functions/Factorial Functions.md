@@ -5,7 +5,9 @@ We are going to explore Factorial Functions and compare two different approaches
 1. Recursion
 2. Iteration
 
-What does factorial mean? `5!` or _**five factorial**_ simply means multiply all the numbers from `5` down to `1`.
+What does factorial mean? The factorial of a number is the product of all positive integers up to that number.
+
+Therefore `5!` or _**five factorial**_ simply means multiply all the numbers from `5` down to `1`.
 
 Example:
 ````
