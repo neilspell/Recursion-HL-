@@ -56,6 +56,9 @@ In this _recursive approach_, the function calls itself with `n-1` until `n` rea
 
 Each time it returns, it multiplies the current `n` with the result of the function call with `n-1`.
 
+Recursion can be a bit mind-bending at first, but it's a powerful technique once you get the hang of it. Just remember to always have a **base case** to prevent infinite recursion!
+
+
 
 
 ## 2. Iteration - Factorial Function 👨🏽‍💻
