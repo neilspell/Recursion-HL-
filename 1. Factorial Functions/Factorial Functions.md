@@ -50,26 +50,37 @@ answer = factorial(5)
 - Test your function for different values (i.e. `4!`, `6!`, `10!`)
 
 ### Let's take a closer look 🤓
-In this recursive approach, the function calls itself with `n-1` until `n` reaches `1`. Then, it returns `1`. 
+In this _recursive approach_, the function calls itself with `n-1` until `n` reaches `1`. Then, it returns `1`. 
 
 Each time it returns, it multiplies the current `n` with the result of the function call with `n-1`.
 
 
+
 ## 2. Iteration - Factorial Function 👨🏽‍💻
-Now, can you create a different solution to the same problem, using **iteration**?
+Now, can you create a different solution to the same problem, using **iteration** instead of recursion?
 
 **Parson's Problem 🧩**
 - Create your own Iterating Function to calculate `5!`.
 - The code below is jumbled up, rearrange it to create your function.
 
 ````py
+print("Factorial of 5 using iteration:", result_iterative)
+for i in range(1, n + 1):
+result = 1
 def factorial_iterative(n):
-    result = 1
-    for i in range(1, n + 1):
-        result *= i
-    return result
+return result
 
 # Calculate 5!
 result_iterative = factorial_iterative(5)
-print("Factorial of 5 using iteration:", result_iterative)
+result *= i
+
 ````
+
+### Let's take a closer look 🤓
+In this _iterative approach_, we start with result initialized to `1`. Then, we iterate from `1` to `n`, multiplying ``result`` by each number in the range.
+
+Both approaches will give you the same result: 120. 
+
+However, the _recursive approach_ uses function calls and might be less efficient for larger values of `n` due to the overhead of function calls and the potential for [stack overflow](https://levelup.gitconnected.com/what-the-heck-is-a-stack-overflow-cb5bb17870a0). 
+
+The _iterative approach_ is generally more efficient and is preferred for factorial calculations.
