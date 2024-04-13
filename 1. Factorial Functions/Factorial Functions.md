@@ -59,7 +59,7 @@ Each time it returns, it multiplies the current `n` with the result of the funct
 ## 2. Iteration - Factorial Function 👨🏽‍💻
 Now, can you create a different solution to the same problem, using **iteration** instead of recursion?
 
-**Parson's Problem 🧩**
+**Part A - Parson's Problem 🧩**
 - Create your own Iterating Function to calculate `5!`.
 - The code below is jumbled up, rearrange it to create your function.
 
