@@ -163,9 +163,9 @@ The code shown below is a recursive implementation of the ``sumOfN`` function. T
 👉 Type up this code into Thonny & try for yourself. _(you will need to delete the line numbers.)_
 
 ````py
-    # A recursive function to add up the first n numbers. 
-    # Example: The sum of the first 5 numbers is 5 + the sum of the first 4 numbers
-    # So, the sum of the first n numbers is n + the sum of the first n-1 numbers
+# A recursive function to add up the first n numbers. 
+# Example: The sum of the first 5 numbers is 5 + the sum of the first 4 numbers
+# So, the sum of the first n numbers is n + the sum of the first n-1 numbers
 
 1.    def sumOfN(n):
 2.    
@@ -176,7 +176,7 @@ The code shown below is a recursive implementation of the ``sumOfN`` function. T
 7.
 8.    # Call the function to test it
 9.    answer = sumOfN(5)
-10.    print(answer)
+10.   print(answer)
 
 ````
 
