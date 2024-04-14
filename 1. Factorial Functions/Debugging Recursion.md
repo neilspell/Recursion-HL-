@@ -39,6 +39,7 @@ Therefore, both ``1! = 1`` and ``0! = 1``. 😎
 
 >
 
+## Using Recursion to solve `5!`
 To solve this problem using **Recursion**, we can think of it happening in 2 stages.
 
 #### Stage 1 📚
