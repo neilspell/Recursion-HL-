@@ -151,9 +151,37 @@ Let's break it down from the ground up:
    - Each new function call adds a new stack frame, and if there are too many function calls without returning, the stack becomes full.
 
 5. **Consequences**:
-   - When a stack overflow occurs, it means <highlight> there's no more room on the call stack to store new function calls and their data. <highlight>
+   - When a stack overflow occurs, it means **there's no more room on the call stack to store new function calls and their data.**
    - This situation is often caused by infinite recursion or excessively deep recursion.
    - The program can't continue executing because it can't allocate more memory for new stack frames.
-   - As a result, the program crashes, and an error message, such as "Stack Overflow" or "RecursionError," is typically displayed.
+   - **As a result, the program crashes, and an error message, such as "Stack Overflow" or "RecursionError," is typically displayed.**
 
 
+## Example - Sum of first `n` integers. 👨🏽‍💻
+The code shown below is a recursive implementation of the ``sumOfN`` function. The purpose of the function is to return the sum of the first ``n`` integers.
+
+````py
+    # A recursive function to add up the first n numbers. 
+    # Example: The sum of the first 5 numbers is 5 + the sum of the first 4 numbers
+    # So, the sum of the first n numbers is n + the sum of the first n-1 numbers
+
+1.    def sumOfN(n):
+2.    
+3.        if n == 0:
+4.            return 0
+5.    
+6.        return n + sumOfN(n-1)
+7.
+8.    # Call the function to test it
+9.    answer = sumOfN(5)
+10.    print(answer)
+
+````
+
+When **line 9** of the program is executed the program context is saved at the bottom of the call stack – shown in the illustration below.
+
+This is the program context at the point when ``sumOfN(5)`` was called. 
+
+The call stack is progressively built up in response to the successive recursive calls to the ``sumOfN`` function made on **line 6**. This continues until ``sumOfN`` is called with an argument of `0`.
+
+![image](https://github.com/ross-bish/Recursion-HL-/assets/83789503/0cce46e0-76e3-4db1-8a08-a4dfceb4707f)
