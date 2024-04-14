@@ -197,4 +197,4 @@ The program context at the point of each call to ``sumOfN`` is restored in the r
 <br>
 
 ### Challenge ⚔️
-Using your debugger 🪲 like the problem above, see if you can identify the different stages of what the Recursive function `sumOfN` does. 
+Using your debugger 🪲 like in the problem above, see if you can identify the different stages of what the Recursive function `sumOfN` does. 
