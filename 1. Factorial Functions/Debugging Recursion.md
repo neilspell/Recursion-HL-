@@ -195,5 +195,6 @@ The program context at the point of each call to ``sumOfN`` is restored in the r
 ![image](https://github.com/ross-bish/Recursion-HL-/assets/83789503/5960d8ca-9766-4580-af69-378d40596647)
 
 <br>
+
 ### Challenge ⚔️
 Using your debugger 🪲 like the problem above, see if you can identify the different stages of what the Recursive function `sumOfN` does. 
