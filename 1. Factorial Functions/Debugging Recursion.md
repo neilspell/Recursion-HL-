@@ -2,7 +2,7 @@
 
 Ok let's take a closer look at our `5!` problem from _Factorial Functions_ and see exactly what's happening.
 
-### Recursive Evaluation 
+### Recursive Evaluation 🤓
 Let's remind ourselves of the math involved when solving `n!`. 
 
 > The factorial of a non-negative integer, 𝑛 denoted by 𝑛! (pronounced n factorial) is the product of all non-negative integers from 𝑛 down to 1 and where 0! is accepted to have a value of 1.
@@ -80,4 +80,49 @@ def factorial(n):
     
 print(factorial(5))                      # Call the function within your print statement
 ````
+
+### Summary 📝
+
+1. **Base Case**: A condition that stops the recursion. In the factorial example, it's when `n = 0`.
+  
+2. **Recursive Case**: The condition where the function calls itself with a simpler/smaller input.
+
+   In the factorial example, it's `n * factorial(n - 1)`.
+
+3. **Progress Toward Base Case**: Each recursive call should move closer to the base case.
+
+   In the factorial example, `n` is decremented by 1 with each recursive call.
+
+4. **Return Value**: Each recursive call returns a value, which is eventually used to compute the final result.
+
+   In the factorial example, each call returns `n * factorial(n - 1)`.
+
+ 
+Recursion can be a bit mind-bending at first, but it's a powerful technique once you get the hang of it, just remember to always have a base case to prevent _**infinite recursion!**_
+Recursion in Python is elegant and often more readable than iterative solutions for certain problems.
+
+However, it also has limitations like maximum recursion depth, which can lead to `RecursionError` if exceeded!
+
+<br>
+
+## Program Context and Call Stack 📚 
+It is worth noting that recursion is considered to be computationally expensive because it requires a relatively large amount of memory to implement.
+
+![image](https://github.com/ross-bish/Recursion-HL-/assets/83789503/eb873454-d2d8-4834-bae7-760421b83539)
+
+To understand why it is the case, it is first necessary to understand two concepts: the **program context** and the **call stack**.
+
+**Program Context**:
+- The program context is like a snapshot of what's happening inside a program at any given moment.
+- It includes things like where the program is in its execution (the current instruction), the values of variables, and other data.
+- This context is crucial for Python to keep track of what's going on in the program.
+
+**Call Stack**:
+- The call stack is a memory area that Python uses to manage function calls.
+- Every time a function is called, Python saves the current program context onto the call stack.
+- This includes information like where the function was called from and the values of variables at that point.
+- When the function finishes executing, Python "pops" or removes its context from the call stack.
+- This process ensures that when the function returns, the program can pick up where it left off with the same context it had before calling the function.
+
+In essence, the call stack helps Python keep track of where it is in a program and what needs to happen next, especially when functions are involved.
 
