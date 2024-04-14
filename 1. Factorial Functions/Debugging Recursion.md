@@ -126,3 +126,34 @@ To understand why it is the case, it is first necessary to understand two concep
 
 In essence, the call stack helps Python keep track of where it is in a program and what needs to happen next, especially when functions are involved.
 
+## Stack Overflow 📚
+A stack overflow happens when the call stack runs out of space due to too many function calls, often caused by _recursive functions_ that don't have proper _base-cases_ or _termination conditions._
+
+Let's break it down from the ground up:
+
+1. **Memory Allocation**:
+   - When a program runs, it needs memory to store various things like variables, function calls, and their associated data.
+   - This memory is allocated in different areas, including the call stack.
+
+2. **Call Stack Functionality**:
+   - The call stack is a portion of memory used to manage function calls.
+   - When a function is called, information about the function call, including parameters and local variables, is stored on the stack.
+   - Each new function call adds a "stack frame" to the top of the stack.
+
+3. **Recursion**:
+   - Recursion occurs when a function calls itself.
+   - With each recursive call, a new stack frame is added to the call stack.
+   - The function's context (local variables, parameters, etc.) for each call is stored in these stack frames.
+
+4. **Stack Overflow**:
+   - A stack overflow happens when the call stack reaches its maximum capacity.
+   - This can occur when there are too many recursive function calls or when the depth of the recursion is too high.
+   - Each new function call adds a new stack frame, and if there are too many function calls without returning, the stack becomes full.
+
+5. **Consequences**:
+   - When a stack overflow occurs, it means <highlight> there's no more room on the call stack to store new function calls and their data. <highlight>
+   - This situation is often caused by infinite recursion or excessively deep recursion.
+   - The program can't continue executing because it can't allocate more memory for new stack frames.
+   - As a result, the program crashes, and an error message, such as "Stack Overflow" or "RecursionError," is typically displayed.
+
+
