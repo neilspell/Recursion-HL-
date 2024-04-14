@@ -70,14 +70,14 @@ Now, try typing the code below into **Thonny**, and I want you to use the debugg
 
 **Sample Code:**
 
-````html
+````py
 
 def factorial(n):
-    if n > 0:    # The base-case is set to 0
-        return n * factorial (n - 1)
+    if n > 0:                            # The base-case is set to 0
+        return n * factorial (n - 1)     # Call the function within the function 
     else:
         return 1
     
-print(factorial(5))  # Call the function within your print statement
+print(factorial(5))                      # Call the function within your print statement
 ````
 
