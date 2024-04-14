@@ -160,6 +160,8 @@ Let's break it down from the ground up:
 ## Example - Sum of first `n` integers. 👨🏽‍💻
 The code shown below is a recursive implementation of the ``sumOfN`` function. The purpose of the function is to return the sum of the first ``n`` integers.
 
+👉 Type up this code into Thonny & try for yourself. _(you will need to delete the line numbers.)_
+
 ````py
     # A recursive function to add up the first n numbers. 
     # Example: The sum of the first 5 numbers is 5 + the sum of the first 4 numbers
@@ -185,3 +187,13 @@ This is the program context at the point when ``sumOfN(5)`` was called.
 The call stack is progressively built up in response to the successive recursive calls to the ``sumOfN`` function made on **line 6**. This continues until ``sumOfN`` is called with an argument of `0`.
 
 ![image](https://github.com/ross-bish/Recursion-HL-/assets/83789503/0cce46e0-76e3-4db1-8a08-a4dfceb4707f)
+
+At this point the condition on **line 3** evaluates to ``True`` and the stack begins to unwind on a _**last-in, first-out (LIFO)**_ principle. 
+
+The program context at the point of each call to ``sumOfN`` is restored in the reverse order to which it was saved. The addition operation on **line 6** is completed for each call, eventually leading to an answer of ``15``.
+
+![image](https://github.com/ross-bish/Recursion-HL-/assets/83789503/5960d8ca-9766-4580-af69-378d40596647)
+
+<br>
+### Challenge ⚔️
+Using your debugger 🪲 like the problem above, see if you can identify the different stages of what the Recursive function `sumOfN` does. 
